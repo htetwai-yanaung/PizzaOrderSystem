@@ -21,7 +21,7 @@ class AdminAuthMiddleware
             if(url()->current() == route('auth#loginPage') || url()->current() == route('auth#registerPage')){
                 return back();
             }
-            if (Auth::user()->role == 'user') {
+            if(Auth::user()->role == 'user') {
                 return back();
             }
             return $next($request);

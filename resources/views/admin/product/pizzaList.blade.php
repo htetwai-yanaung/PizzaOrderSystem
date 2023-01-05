@@ -22,9 +22,6 @@
                                     <i class="zmdi zmdi-plus"></i>Add Pizza
                                 </button>
                             </a>
-                            <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                CSV download
-                            </button>
                         </div>
                     </div>
                     {{-- message alert  --}}

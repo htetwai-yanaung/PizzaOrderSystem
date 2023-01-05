@@ -36,7 +36,7 @@
                                                 class=" rounded-circle img-thumbnail">
                                         @endif
                                     @else
-                                        <img src="{{ asset('storage/' . Auth::user()->image) }}" />
+                                        <img src="{{ asset('storage/' . Auth::user()->image) }}" alt="{{ Auth::user()->image }}"/>
                                     @endif
                                 </div>
                                 <div class="col-5 offset-1">

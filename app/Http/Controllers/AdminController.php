@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Storage;
+use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -53,7 +53,6 @@ class AdminController extends Controller
 
     // update account
     public function update($id,Request $request){
-
 
         $this->accountValidationCheck($request);
         $data = $this->getUserData($request);
